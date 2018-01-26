@@ -45,6 +45,11 @@
   <ItemGroup>
     <Compile Include="Base\BaseEntity.cs" />
     <Compile Include="Base\BaseItem.cs" />
+    <Compile Include="Comments\AnswerComment.cs" />
+    <Compile Include="Comments\Comment.cs" />
+    <Compile Include="Comments\ProjectComment.cs" />
+    <Compile Include="Comments\QuestionComment.cs" />
+    <Compile Include="Hubs\Answer.cs" />
     <Compile Include="Hubs\Hub.cs" />
     <Compile Include="Hubs\Article.cs" />
     <Compile Include="Hubs\Polls\Poll.cs" />
@@ -53,16 +58,26 @@
     <Compile Include="Hubs\ProjectHub.cs" />
     <Compile Include="Hubs\SkillHub.cs" />
     <Compile Include="Hubs\Question.cs" />
+    <Compile Include="Organisation\Company.cs" />
+    <Compile Include="Organisation\Department.cs" />
+    <Compile Include="Organisation\DepartmentOwner.cs" />
+    <Compile Include="Organisation\Owner.cs" />
+    <Compile Include="Organisation\Team.cs" />
+    <Compile Include="Organisation\TeamOwner.cs" />
     <Compile Include="Personalize\Favourite.cs" />
     <Compile Include="Projects\Project.cs" />
     <Compile Include="Projects\ProjectSkill.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Skills\Endorse.cs" />
     <Compile Include="Skills\Skill.cs" />
+    <Compile Include="Skills\SkillConnection.cs" />
     <Compile Include="Skills\SkillKeeper.cs" />
+    <Compile Include="Skills\SkillMention.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Account\" />
+    <Folder Include="Achievements\" />
+    <Folder Include="Discussions\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
