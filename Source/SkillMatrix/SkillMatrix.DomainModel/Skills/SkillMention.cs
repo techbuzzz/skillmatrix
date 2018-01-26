@@ -11,6 +11,6 @@ namespace SkillMatrix.DomainModel.Skills
     {
         public string SkillId { get; set; }
 
-        public string LinkId { get; set; }
+        public string LinkItemId { get; set; }
     }
 }

@@ -49,6 +49,7 @@
     <Compile Include="Comments\Comment.cs" />
     <Compile Include="Comments\ProjectComment.cs" />
     <Compile Include="Comments\QuestionComment.cs" />
+    <Compile Include="Feeds\News.cs" />
     <Compile Include="Hubs\Answer.cs" />
     <Compile Include="Hubs\Hub.cs" />
     <Compile Include="Hubs\Article.cs" />
@@ -58,6 +59,10 @@
     <Compile Include="Hubs\ProjectHub.cs" />
     <Compile Include="Hubs\SkillHub.cs" />
     <Compile Include="Hubs\Question.cs" />
+    <Compile Include="Messages\Message.cs" />
+    <Compile Include="Messages\PrivateMessage.cs" />
+    <Compile Include="Messages\ProjectMessage.cs" />
+    <Compile Include="Messages\TeamMessage.cs" />
     <Compile Include="Organisation\Company.cs" />
     <Compile Include="Organisation\Department.cs" />
     <Compile Include="Organisation\DepartmentOwner.cs" />
@@ -73,6 +78,7 @@
     <Compile Include="Skills\SkillConnection.cs" />
     <Compile Include="Skills\SkillKeeper.cs" />
     <Compile Include="Skills\SkillMention.cs" />
+    <Compile Include="Subscriptions\Subscription.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Account\" />
