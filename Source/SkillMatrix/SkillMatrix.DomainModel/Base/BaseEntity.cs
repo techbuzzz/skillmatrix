@@ -6,7 +6,6 @@ namespace SkillMatrix.DomainModel.Base
 {
     public class BaseEntity
     {
-
         public BaseEntity()
         {
             UId = Guid.NewGuid().ToString();

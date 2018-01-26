@@ -45,7 +45,24 @@
   <ItemGroup>
     <Compile Include="Base\BaseEntity.cs" />
     <Compile Include="Base\BaseItem.cs" />
+    <Compile Include="Hubs\Hub.cs" />
+    <Compile Include="Hubs\Article.cs" />
+    <Compile Include="Hubs\Polls\Poll.cs" />
+    <Compile Include="Hubs\Polls\PollAnswer.cs" />
+    <Compile Include="Hubs\Polls\PollVote.cs" />
+    <Compile Include="Hubs\ProjectHub.cs" />
+    <Compile Include="Hubs\SkillHub.cs" />
+    <Compile Include="Hubs\Question.cs" />
+    <Compile Include="Personalize\Favourite.cs" />
+    <Compile Include="Projects\Project.cs" />
+    <Compile Include="Projects\ProjectSkill.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Skills\Endorse.cs" />
+    <Compile Include="Skills\Skill.cs" />
+    <Compile Include="Skills\SkillKeeper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Account\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
