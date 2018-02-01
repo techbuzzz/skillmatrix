@@ -14,5 +14,11 @@ namespace SkillMatrix.DomainModel.Skills
 
         public decimal RelationDistance { get; set; }
 
+
+        public virtual Skill Skill { get; set; }
+        public virtual Skill ConnectedSkill { get; set; }
+
+
+
     }
 }

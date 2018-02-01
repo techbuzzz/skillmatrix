@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using SkillMatrix.DomainModel.Identity;
 
 namespace SkillMatrix.DomainModel.Base
 {
@@ -32,5 +33,8 @@ namespace SkillMatrix.DomainModel.Base
 
         [Column(Order = 106)]
         public DateTime? UpdatedOn { get; set; }
+
+        public virtual Account CreatedBy { get; set; }
+
     }
 }

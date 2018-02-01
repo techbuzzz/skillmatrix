@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillMatrix.Repository", "S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillMatrix.Infrastructure", "SkillMatrix.Infrastructure\SkillMatrix.Infrastructure.csproj", "{861079C8-7F07-4426-9D5D-6C2816A3C064}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillMatrix.Data", "SkillMatrix.Data\SkillMatrix.Data.csproj", "{7B6A14BF-D204-4E82-8C7B-A8CC7A0E694D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{861079C8-7F07-4426-9D5D-6C2816A3C064}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{861079C8-7F07-4426-9D5D-6C2816A3C064}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{861079C8-7F07-4426-9D5D-6C2816A3C064}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B6A14BF-D204-4E82-8C7B-A8CC7A0E694D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B6A14BF-D204-4E82-8C7B-A8CC7A0E694D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B6A14BF-D204-4E82-8C7B-A8CC7A0E694D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B6A14BF-D204-4E82-8C7B-A8CC7A0E694D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

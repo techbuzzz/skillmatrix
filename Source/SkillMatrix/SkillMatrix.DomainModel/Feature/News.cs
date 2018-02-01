@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using SkillMatrix.Common.Enums;
 using SkillMatrix.DomainModel.Base;
 
-namespace SkillMatrix.DomainModel.Feeds
+namespace SkillMatrix.DomainModel.Feature
 {
     public abstract class News : BaseEntity
     {
@@ -16,6 +12,8 @@ namespace SkillMatrix.DomainModel.Feeds
         public bool NeedNotify { get; set; }
 
         public bool? IsSentMessage { get; set; }
+
+        public NewsType Type { get; set; }
 
     }
 }

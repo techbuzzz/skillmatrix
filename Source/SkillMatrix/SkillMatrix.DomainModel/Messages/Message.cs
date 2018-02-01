@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SkillMatrix.DomainModel.Base;
+using SkillMatrix.DomainModel.Identity;
 
 namespace SkillMatrix.DomainModel.Messages
 {
@@ -15,6 +16,11 @@ namespace SkillMatrix.DomainModel.Messages
 
         public bool NeedNotify { get; set; }
         public bool? IsSentMessage { get; set; }
+
+        public string AccountFromId { get; set; }
+
+        public virtual Account AccountFrom { get; set; }
+
 
 
     }

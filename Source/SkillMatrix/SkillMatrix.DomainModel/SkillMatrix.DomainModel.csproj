@@ -33,6 +33,22 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -43,13 +59,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Achievements\Goal.cs" />
+    <Compile Include="Achievements\GoalStatus.cs" />
+    <Compile Include="Achievements\GoalType.cs" />
+    <Compile Include="Achievements\Metric.cs" />
+    <Compile Include="Identity\Account.cs" />
     <Compile Include="Base\BaseEntity.cs" />
     <Compile Include="Base\BaseItem.cs" />
-    <Compile Include="Comments\AnswerComment.cs" />
-    <Compile Include="Comments\Comment.cs" />
-    <Compile Include="Comments\ProjectComment.cs" />
-    <Compile Include="Comments\QuestionComment.cs" />
-    <Compile Include="Feeds\News.cs" />
+    <Compile Include="Feature\Comment.cs" />
+    <Compile Include="Feature\News.cs" />
     <Compile Include="Hubs\Answer.cs" />
     <Compile Include="Hubs\Hub.cs" />
     <Compile Include="Hubs\Article.cs" />
@@ -59,16 +77,21 @@
     <Compile Include="Hubs\ProjectHub.cs" />
     <Compile Include="Hubs\SkillHub.cs" />
     <Compile Include="Hubs\Question.cs" />
+    <Compile Include="Identity\Relation\ProjectRelation.cs" />
+    <Compile Include="Identity\Relation\TeamRelation.cs" />
+    <Compile Include="Identity\Relation\DepartmentRelation.cs" />
+    <Compile Include="Identity\UserProfile.cs" />
+    <Compile Include="Identity\Relation\UserRelation.cs" />
     <Compile Include="Messages\Message.cs" />
     <Compile Include="Messages\PrivateMessage.cs" />
     <Compile Include="Messages\ProjectMessage.cs" />
     <Compile Include="Messages\TeamMessage.cs" />
     <Compile Include="Organisation\Company.cs" />
     <Compile Include="Organisation\Department.cs" />
-    <Compile Include="Organisation\DepartmentOwner.cs" />
-    <Compile Include="Organisation\Owner.cs" />
+    <Compile Include="Owners\DepartmentOwner.cs" />
+    <Compile Include="Owners\Owner.cs" />
     <Compile Include="Organisation\Team.cs" />
-    <Compile Include="Organisation\TeamOwner.cs" />
+    <Compile Include="Owners\TeamOwner.cs" />
     <Compile Include="Personalize\Favourite.cs" />
     <Compile Include="Projects\Project.cs" />
     <Compile Include="Projects\ProjectSkill.cs" />
@@ -76,14 +99,22 @@
     <Compile Include="Skills\Endorse.cs" />
     <Compile Include="Skills\Skill.cs" />
     <Compile Include="Skills\SkillConnection.cs" />
-    <Compile Include="Skills\SkillKeeper.cs" />
+    <Compile Include="Owners\SkillKeeper.cs" />
     <Compile Include="Skills\SkillMention.cs" />
     <Compile Include="Subscriptions\Subscription.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Account\" />
-    <Folder Include="Achievements\" />
     <Folder Include="Discussions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SkillMatrix.Common\SkillMatrix.Common.csproj">
+      <Project>{936BA64B-5BBA-4852-83BB-BB1194B222BF}</Project>
+      <Name>SkillMatrix.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

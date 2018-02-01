@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SkillMatrix.DomainModel.Organisation
+namespace SkillMatrix.DomainModel.Identity.Relation
 {
-    public class DepartmentOwner: Owner
+    public class DepartmentRelation: UserRelation
     {
         public string DepartmentId { get; set; }
     }

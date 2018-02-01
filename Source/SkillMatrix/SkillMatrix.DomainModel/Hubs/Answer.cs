@@ -16,5 +16,8 @@ namespace SkillMatrix.DomainModel.Hubs
         public int VoteCount { get; set; }
 
         public bool IsSolution { get; set; }
+
+        public virtual Question Question { get; set; }
+
     }
 }

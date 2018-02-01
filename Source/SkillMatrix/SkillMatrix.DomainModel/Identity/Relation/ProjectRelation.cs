@@ -3,16 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using SkillMatrix.DomainModel.Projects;
 
-namespace SkillMatrix.DomainModel.Hubs
+namespace SkillMatrix.DomainModel.Identity.Relation
 {
-    public class ProjectHub: Hub
+    public class ProjectRelation: UserRelation
     {
         public string ProjectId { get; set; }
-
-
-        public virtual Project Project { get; set; }
-
     }
 }

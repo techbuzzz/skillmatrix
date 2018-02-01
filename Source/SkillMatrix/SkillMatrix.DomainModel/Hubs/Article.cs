@@ -10,5 +10,7 @@ namespace SkillMatrix.DomainModel.Hubs
     {
         public string HubId { get; set; }
 
+        public virtual Hub Hub { get; set; }
+
     }
 }

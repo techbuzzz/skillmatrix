@@ -4,10 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SkillMatrix.DomainModel.Comments
+namespace SkillMatrix.Common.Enums
 {
-    public class AnswerComment: Comment
+    public enum NewsType
     {
-        public string AnswerId { get; set; }
+        Undefined = 0,
+        Project =1,
+        Hub =2
+
     }
 }
