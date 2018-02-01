@@ -77,6 +77,9 @@
     <Compile Include="Hubs\ProjectHub.cs" />
     <Compile Include="Hubs\SkillHub.cs" />
     <Compile Include="Hubs\Question.cs" />
+    <Compile Include="Identity\AccountPemission.cs" />
+    <Compile Include="Identity\AccountRole.cs" />
+    <Compile Include="Identity\AccountUserRole.cs" />
     <Compile Include="Identity\Relation\ProjectRelation.cs" />
     <Compile Include="Identity\Relation\TeamRelation.cs" />
     <Compile Include="Identity\Relation\DepartmentRelation.cs" />
