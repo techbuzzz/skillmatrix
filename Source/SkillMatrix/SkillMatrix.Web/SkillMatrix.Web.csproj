@@ -83,6 +83,10 @@
       <HintPath>..\packages\Microsoft.Owin.Security.OAuth.3.1.0\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Microsoft.Web.Mvc, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.Futures.5.0.0\lib\net40\Microsoft.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
@@ -176,13 +180,14 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Core\PermissionHelper.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -308,6 +313,18 @@
     <ProjectReference Include="..\SkillMatrix.Common\SkillMatrix.Common.csproj">
       <Project>{936BA64B-5BBA-4852-83BB-BB1194B222BF}</Project>
       <Name>SkillMatrix.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SkillMatrix.Data\SkillMatrix.Data.csproj">
+      <Project>{7B6A14BF-D204-4E82-8C7B-A8CC7A0E694D}</Project>
+      <Name>SkillMatrix.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SkillMatrix.DomainModel\SkillMatrix.DomainModel.csproj">
+      <Project>{57EA673A-F4B0-445F-8721-8DE5F2F0C7DB}</Project>
+      <Name>SkillMatrix.DomainModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SkillMatrix.ViewModel\SkillMatrix.ViewModel.csproj">
+      <Project>{8A3DA356-AF06-4D0F-912A-C5560DAF92EE}</Project>
+      <Name>SkillMatrix.ViewModel</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
