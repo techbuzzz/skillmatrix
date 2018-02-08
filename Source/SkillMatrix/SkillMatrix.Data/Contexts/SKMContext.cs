@@ -7,10 +7,11 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity.EntityFramework;
 using SkillMatrix.DomainModel.Identity;
+using SkillMatrix.Infrastructure.Interfaces;
 
 namespace SkillMatrix.Data.Contexts
 {
-	public class SKMContext: IdentityDbContext <Account, AccountRole, string, IdentityUserLogin, AccountUserRole, IdentityUserClaim>
+	public class SKMContext: IdentityDbContext <Account, AccountRole, string, IdentityUserLogin, AccountUserRole, IdentityUserClaim>, IDbContext
 	{
 		public SKMContext() : base("MainConnection")
 		{
