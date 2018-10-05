@@ -12,7 +12,6 @@ namespace SkillMatrix.DomainModel.Identity
         }
 
         public virtual AccountRole Role { get; set; }
-        //public ApplicationUser User { get; set; }
 
         public bool IsPermissionInRole(string permission)
         {

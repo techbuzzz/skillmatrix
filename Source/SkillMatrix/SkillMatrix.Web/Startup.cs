@@ -9,6 +9,7 @@ namespace SkillMatrix.Web
         public void Configuration(IAppBuilder app)
         {
             ConfigureAuth(app);
+            ContainerConfig.ConfigureContainer(app);
         }
     }
 }

@@ -10,7 +10,11 @@ namespace SkillMatrix.Web
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                 "~/Scripts/jquery-{version}.js",
-                "~/Scripts/jquery.slimscroll.js"));
+                "~/Scripts/jquery.slimscroll.js",
+                "~/Scripts/jquery.fabric.js",
+                "~/Scripts/vendor/PickaDate.js"
+
+                ));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                 "~/Scripts/jquery.validate*"));
@@ -35,6 +39,10 @@ namespace SkillMatrix.Web
                 "~/Content/font-awesome.css",
                 "~/Content/metisMenu.css",
                 "~/Content/style.css"));
+
+            bundles.Add(new StyleBundle("~/Content/of").Include(
+                "~/Content/fabric.css", 
+                "~/Content/fabric-9.6.0.scoped"));
         }
     }
 }

@@ -8,5 +8,6 @@ namespace SkillMatrix.Common.Enums
 {
     public enum PermissionType
     {
+	    FullAccess
     }
 }

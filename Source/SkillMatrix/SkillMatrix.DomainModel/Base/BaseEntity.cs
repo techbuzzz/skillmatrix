@@ -35,6 +35,8 @@ namespace SkillMatrix.DomainModel.Base
         public DateTime? UpdatedOn { get; set; }
 
         public virtual Account CreatedBy { get; set; }
+        public virtual Account UpdatedBy { get; set; }
+
 
     }
 }

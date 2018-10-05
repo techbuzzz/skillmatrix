@@ -30,7 +30,7 @@ namespace SkillMatrix.Infrastructure
                 Set<T>().Add(entity);
         }
 
-        public void Update(T entity)
+		public void Update(T entity)
         {
             Set<T>().Attach(entity);
             DataContext.Entry(entity).State = EntityState.Modified;

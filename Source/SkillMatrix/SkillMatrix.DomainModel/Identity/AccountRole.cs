@@ -32,8 +32,9 @@ namespace SkillMatrix.DomainModel.Identity
         public string MappedToId { get; set; }
 
         public virtual ICollection<AccountPemission> Permissions { get; set; }
+	    public bool IsFullControl { get; set; }
 
-        public bool IsPermissionInRole(string permission)
+	    public bool IsPermissionInRole(string permission)
         {
             var retVal = false;
             try
