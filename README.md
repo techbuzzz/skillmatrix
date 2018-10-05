@@ -1,8 +1,16 @@
-# skillmatrix
-SkillMatrix is a fully featured ASP.NET MVC 5 skill competition managment tool that fit your company culture perfectly
+# Skill Matrix
+SkillMatrix is a fully featured skill competition managment tool that fit your company culture perfectly
 
-Progress status: POC
+## Based on:
 
-Features Include:
+## Progress status: POC
+
+# Technologies
+- ASP.NET Core
+- SPA wit Angular 2+
+- AutoMapper
+- Autofac
+- NUnit
+- Moq
 
 
