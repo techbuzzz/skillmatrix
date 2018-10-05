@@ -23,9 +23,16 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "./node_modules/bootstrap/dist/css/bootstrap.css",
+              "./node_modules/animate.css/animate.min.css",
+              "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.js",
+              "./node_modules/tether/dist/js/tether.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.js",
+              "./node_modules/metismenu/dist/metisMenu.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -50,7 +57,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "skillmatrix-client:build"
+            "browserTarget": "skillmatrix-client:build",
+            "port": 5001
           },
           "configurations": {
             "production": {
@@ -72,7 +80,7 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": [],
             "assets": [
@@ -93,6 +101,10 @@
             ]
           }
         }
+        // "defaults": {
+        //   "styleExt": "css",
+        //   "component": {}
+        // }
       }
     },
     "skillmatrix-client-e2e": {
