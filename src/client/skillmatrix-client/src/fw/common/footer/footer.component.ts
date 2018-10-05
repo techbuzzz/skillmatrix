@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'false-footer',
+  selector: 'fw-footer',
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.css']
 })

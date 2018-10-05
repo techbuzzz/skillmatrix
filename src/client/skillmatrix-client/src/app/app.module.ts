@@ -6,15 +6,15 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { appRoutes } from './app.routing';
 import { AppComponent } from './app.component';
 
-import { SkillsComponent } from './skills/skills.component';
 import { FwModule } from '../fw/fw.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { MainDashboardComponent } from './dashboard/main-dashboard/main-dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SkillsComponent,
-DashboardComponent
+    DashboardComponent,
+    MainDashboardComponent
   ],
   imports: [
     BrowserModule,

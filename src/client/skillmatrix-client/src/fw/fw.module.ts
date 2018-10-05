@@ -5,6 +5,8 @@ import { FormsModule } from '@angular/forms';
 import { FooterComponent } from './common/footer/footer.component';
 import { SidebarComponent } from './common/sidebar/sidebar.component';
 import { TopnavbarComponent } from './common/topnavbar/topnavbar.component';
+import { ContentComponent } from './common/content/content.component';
+import { PageContentComponent } from './page-content/page-content.component';
 
 
 @NgModule({
@@ -16,7 +18,12 @@ import { TopnavbarComponent } from './common/topnavbar/topnavbar.component';
   declarations: [
     FooterComponent,
     SidebarComponent,
-    TopnavbarComponent
+    TopnavbarComponent,
+    ContentComponent,
+    PageContentComponent
+  ],
+  exports:[
+    PageContentComponent
   ]
 })
 export class FwModule { }
