@@ -9,12 +9,16 @@ import { AppComponent } from './app.component';
 import { FwModule } from '../fw/fw.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { MainDashboardComponent } from './dashboard/main-dashboard/main-dashboard.component';
+import { SkillsComponent } from './skills/skills.component';
+import { MainSkillsComponent } from './skills/main-skills/main-skills.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
-    MainDashboardComponent
+    MainDashboardComponent,
+    SkillsComponent,
+    MainSkillsComponent
   ],
   imports: [
     BrowserModule,
